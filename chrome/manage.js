@@ -69,7 +69,7 @@
                     document.getElementById("feedback2").textContent = "No code given.";
                     document.getElementById("found").className = "hide";
                 }
-                else if (c.match("^[A-Za-z0-9:_<>?!]+$")) { //allowed characters
+                else if (c.match("^[A-Za-z0-9:;_<>?!]+$")) { //allowed characters
                     var found = false;
                     for (var i = 0; i < emotes.length; i++) {
                         if (c == emotes[i].code) {
